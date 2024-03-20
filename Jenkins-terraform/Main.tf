@@ -59,7 +59,7 @@ resource "aws_security_group" "Jenkins-sg" {
 }
 
 resource "aws_instance" "web" {
-  ami                    = "ami-0df4b2961410d4cff"
+  ami                    = "i-0e044ddd8763286b7"
   instance_type          = "t2.micro"
   key_name               = "purplehaze"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
